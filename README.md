@@ -1,7 +1,7 @@
 # Christmas Sing a Song Kata
 
 ## Credits
-Inspired by the [Sing a Song Kata](https://kata-log.rocks/sing-a-song-kata).
+Inspired by the original [Sing a Song Kata](https://kata-log.rocks/sing-a-song-kata).
 
 ## The "Situation"
 Code to produce a popular Christmas song was produced by a web agency for the customer last year. 
