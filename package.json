@@ -1,0 +1,16 @@
+{
+  "name": "xmas-sing-a-song-kata",
+  "version": "1.0.0",
+  "description": "A Christmas-themed refactoring kata",
+  "main": "index.js",
+  "repository": "https://github.com/nawhi/xmas-sing-a-song-kata",
+  "author": "nawhi",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "start": "ts-node src/song.ts"
+  }
+}
