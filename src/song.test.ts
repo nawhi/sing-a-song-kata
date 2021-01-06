@@ -3,7 +3,15 @@ import {song} from "./song";
 
 describe('Song', () => {
   it('works', () => {
-    expect(song()).to.eql(`There was an old lady who swallowed a fly.
+    expect(song([
+      'fly',
+      'spider',
+      'bird',
+      'cat',
+      'dog',
+      'cow',
+      'horse',
+    ])).to.eql(`There was an old lady who swallowed a fly.
 I don't know why she swallowed a fly - perhaps she'll die!
 
 There was an old lady who swallowed a spider;
