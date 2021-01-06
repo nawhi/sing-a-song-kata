@@ -1,4 +1,9 @@
-export const song = () => `There was an old lady who swallowed a fly.
+import { expect } from "chai";
+import {song} from "./song";
+
+describe('Song', () => {
+  it('works', () => {
+    expect(song()).to.eql(`There was an old lady who swallowed a fly.
 I don't know why she swallowed a fly - perhaps she'll die!
 
 There was an old lady who swallowed a spider;
@@ -37,4 +42,9 @@ She swallowed the spider to catch the fly;
 I don't know why she swallowed a fly - perhaps she'll die!
 
 There was an old lady who swallowed a horse...
-...She's dead, of course!`;
+...She's dead, of course!`)
+
+
+    }
+  );
+});
