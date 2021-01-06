@@ -1,105 +1,42 @@
-const song = `
-On the 1st day of Christmas my true love sent to me
-And a partridge in a pear tree.
+const song = `There was an old lady who swallowed a fly.
+I don't know why she swallowed a fly - perhaps she'll die!
 
-On the 2nd day of Christmas my true love sent to me
-Two turtle doves,
-And a partridge in a pear tree.
+There was an old lady who swallowed a spider;
+That wriggled and wiggled and tickled inside her.
+She swallowed the spider to catch the fly;
+I don't know why she swallowed a fly - perhaps she'll die!
 
-On the 3rd day of Christmas my true love sent to me
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
+There was an old lady who swallowed a bird;
+How absurd to swallow a bird.
+She swallowed the bird to catch the spider,
+She swallowed the spider to catch the fly;
+I don't know why she swallowed a fly - perhaps she'll die!
 
-On the 4th day of Christmas my true love sent to me
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
+There was an old lady who swallowed a cat;
+Fancy that to swallow a cat!
+She swallowed the cat to catch the bird,
+She swallowed the bird to catch the spider,
+She swallowed the spider to catch the fly;
+I don't know why she swallowed a fly - perhaps she'll die!
 
-On the 5th day of Christmas my true love sent to me
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
+There was an old lady who swallowed a dog;
+What a hog, to swallow a dog!
+She swallowed the dog to catch the cat,
+She swallowed the cat to catch the bird,
+She swallowed the bird to catch the spider,
+She swallowed the spider to catch the fly;
+I don't know why she swallowed a fly - perhaps she'll die!
 
-On the 6th day of Christmas, my true love sent to me
-Six geese a-laying,
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
+There was an old lady who swallowed a cow;
+I don't know how she swallowed a cow!
+She swallowed the cow to catch the dog,
+She swallowed the dog to catch the cat,
+She swallowed the cat to catch the bird,
+She swallowed the bird to catch the spider,
+She swallowed the spider to catch the fly;
+I don't know why she swallowed a fly - perhaps she'll die!
 
-On the 7th day of Christmas my true love sent to me
-Seven swans a-swimming,
-Six geese a-laying,
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
-
-On the 8th day of Christmas my true love sent to me
-Eight maids a-milking,
-Seven swans a-swimming,
-Six geese a-laying,
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
-
-On the 9th day of Christmas, my true love sent to me
-Nine ladies dancing,
-Eight maids a-milking,
-Seven swans a-swimming,
-Six geese a-laying,
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
-
-On the 10th day of Christmas, my true love sent to me
-Ten lords a-leaping,
-Nine ladies dancing,
-Eight maids a-milking,
-Seven swans a-swimming,
-Six geese a-laying,
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
-
-On the 11th day of Christmas, my true love sent to me
-Eleven pipers piping,
-Ten lords a-leaping,
-Nine ladies dancing,
-Eight maids a-milking,
-Seven swans a-swimming,
-Six geese a-laying,
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
-
-On the 12th day of Christmas, my true love sent to me
-Twelve drummers drumming,
-Eleven pipers piping,
-Ten lords a-leaping,
-Nine ladies dancing,
-Eight maids a-milking,
-Seven swans a-swimming,
-Six geese a-laying,
-Five golden rings,
-Four calling birds,
-Three french hens,
-Two turtle doves,
-And a partridge in a pear tree.
-`;
+There was an old lady who swallowed a horse...
+...She's dead, of course!`;
 
 console.log(song);
