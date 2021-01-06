@@ -1,4 +1,4 @@
-# Christmas Sing a Song Kata
+# Sing a Song Kata
 
 ## Credits
 The original [Sing a Song Kata](https://kata-log.rocks/sing-a-song-kata).
