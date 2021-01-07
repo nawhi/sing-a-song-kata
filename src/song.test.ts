@@ -2,7 +2,7 @@ import { expect } from "chai";
 import {song} from "./song";
 
 describe('Song', () => {
-  it('works', () => {
+  it('generates a song given original parameters', () => {
     expect(song([
       'fly',
       'spider',

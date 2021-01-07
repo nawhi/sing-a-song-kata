@@ -1,15 +1,27 @@
+function generateSwallowedLine(predator: string, prey: string) {
+  return `She swallowed the ${predator} to catch the ${prey}`;
+}
+
+function generateSwallowedLines(animals: [string, string, ...string[]]) {
+  if (animals.length > 2) {
+    const predator = animals[2]
+    const prey = animals[1]
+    return `${generateSwallowedLine(predator, prey)},\n${generateSwallowedLine(animals[1], animals[0])};`
+  }
+  return `${generateSwallowedLine(animals[1], animals[0])};`
+}
+
 export const song = (animals: string[]) => `There was an old lady who swallowed a ${animals[0]}.
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[1]};
 That wriggled and wiggled and tickled inside her.
-She swallowed the ${animals[1]} to catch the ${animals[0]};
+${generateSwallowedLines([animals[0], animals[1]])}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[2]};
 How absurd to swallow a ${animals[2]}.
-She swallowed the ${animals[2]} to catch the ${animals[1]},
-She swallowed the ${animals[1]} to catch the ${animals[0]};
+${generateSwallowedLines([animals[0], animals[1], animals[2]])}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[3]};
