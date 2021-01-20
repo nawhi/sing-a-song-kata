@@ -13,34 +13,33 @@ function generateSwallowedLines(animals: string[]): string {
   return `${generateSwallowedLine(animals[1], animals[0])};`
 }
 
+function getFirstTwoLines(name: string, comment: string, closingPunctuation: string) {
+  return `There was an old lady who swallowed a ${name}${closingPunctuation}
+${comment}`
+}
+
 export const song = (fullAnimals: {name: string; comment: string}[]) => {
   const animals = fullAnimals.map(a => a.name);
   const comments = fullAnimals.map(a => a.comment);
-  return `There was an old lady who swallowed a ${fullAnimals[0].name}.
-${comments[0]}
+  return `${getFirstTwoLines(animals[0], comments[0],'.')}
 
-There was an old lady who swallowed a ${animals[1]};
-${comments[1]}
+${getFirstTwoLines(animals[1], comments[1],';')}
 ${generateSwallowedLines(animals.slice(0, 2))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
-There was an old lady who swallowed a ${animals[2]};
-${comments[2]}
+${getFirstTwoLines(animals[2], comments[2],';')}
 ${generateSwallowedLines(animals.slice(0, 3))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
-There was an old lady who swallowed a ${animals[3]};
-${comments[3]}
+${getFirstTwoLines(animals[3], comments[3],';')}
 ${generateSwallowedLines(animals.slice(0, 4))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
-There was an old lady who swallowed a ${animals[4]};
-${comments[4]}
+${getFirstTwoLines(animals[4], comments[4],';')}
 ${generateSwallowedLines(animals.slice(0, 5))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
-There was an old lady who swallowed a ${animals[5]};
-${comments[5]}
+${getFirstTwoLines(animals[5], comments[5],';')}
 ${generateSwallowedLines(animals.slice(0, 6))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
