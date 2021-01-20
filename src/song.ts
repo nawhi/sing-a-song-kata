@@ -13,8 +13,10 @@ function generateSwallowedLines(animals: string[]): string {
   return `${generateSwallowedLine(animals[1], animals[0])};`
 }
 
-export const song = (animals: string[]) => `There was an old lady who swallowed a ${animals[0]}.
-I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
+export const song = (fullAnimals: {name: string; comment: string}[]) => {
+  const animals = fullAnimals.map(a => a.name);
+  return `There was an old lady who swallowed a ${fullAnimals[0].name}.
+${fullAnimals[0].comment}
 
 There was an old lady who swallowed a ${animals[1]};
 That wriggled and wiggled and tickled inside her.
@@ -43,3 +45,4 @@ I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[6]}...
 ...She's dead, of course!`;
+};
