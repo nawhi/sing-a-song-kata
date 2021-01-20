@@ -1,12 +1,11 @@
-function generateSwallowedLine(predator: string, prey: string) {
+function generateSwallowedLine(predator: string, prey: string): string {
   return `She swallowed the ${predator} to catch the ${prey}`;
 }
 
-function generateSwallowedLines(animals: [string, string, ...string[]]) {
+function generateSwallowedLines(animals: [string, string, ...string[]]): string {
   if (animals.length > 2) {
-    const predator = animals[2]
-    const prey = animals[1]
-    return `${generateSwallowedLine(predator, prey)},\n${generateSwallowedLine(animals[1], animals[0])};`
+    const [prey, predator] = animals.slice(-2)
+    return `${generateSwallowedLine(predator, prey)},\n${generateSwallowedLines(animals.slice(0, -1) as any)}`
   }
   return `${generateSwallowedLine(animals[1], animals[0])};`
 }
