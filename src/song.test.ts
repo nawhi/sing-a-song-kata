@@ -10,7 +10,7 @@ describe('Song', () => {
       { name: 'cat', comment: "Fancy that to swallow a cat!"},
       { name: 'dog', comment: "What a hog, to swallow a dog!"},
       { name: 'cow', comment: "I don't know how she swallowed a cow!"},
-      { name: 'horse', comment: "...She's dead, of course!`;"}
+      { name: 'horse', comment: "...She's dead, of course!"}
     ])).to.eql(`There was an old lady who swallowed a fly.
 I don't know why she swallowed a fly - perhaps she'll die!
 

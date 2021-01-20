@@ -15,34 +15,35 @@ function generateSwallowedLines(animals: string[]): string {
 
 export const song = (fullAnimals: {name: string; comment: string}[]) => {
   const animals = fullAnimals.map(a => a.name);
+  const comments = fullAnimals.map(a => a.comment);
   return `There was an old lady who swallowed a ${fullAnimals[0].name}.
-${fullAnimals[0].comment}
+${comments[0]}
 
 There was an old lady who swallowed a ${animals[1]};
-That wriggled and wiggled and tickled inside her.
+${comments[1]}
 ${generateSwallowedLines(animals.slice(0, 2))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[2]};
-How absurd to swallow a ${animals[2]}.
+${comments[2]}
 ${generateSwallowedLines(animals.slice(0, 3))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[3]};
-Fancy that to swallow a ${animals[3]}!
+${comments[3]}
 ${generateSwallowedLines(animals.slice(0, 4))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[4]};
-What a hog, to swallow a ${animals[4]}!
+${comments[4]}
 ${generateSwallowedLines(animals.slice(0, 5))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[5]};
-I don't know how she swallowed a ${animals[5]}!
+${comments[5]}
 ${generateSwallowedLines(animals.slice(0, 6))}
 I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
 
 There was an old lady who swallowed a ${animals[6]}...
-...She's dead, of course!`;
+${comments[6]}`
 };
