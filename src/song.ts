@@ -26,27 +26,14 @@ ${comment}`
 export const song = (fullAnimals: {name: string; comment: string}[]) => {
   const animals = fullAnimals.map(a => a.name);
   const comments = fullAnimals.map(a => a.comment);
+  const middleLines = fullAnimals.slice(1, -1).map((animal, i, arr) => {
+    return `${getFirstTwoLines(animal.name, animal.comment, ';')}
+${generateSwallowedLines(animals.slice(0, i+2))}
+I don't know why she swallowed a ${animals[0]} - perhaps she'll die!`
+  }).join('\n\n')
   return `${getFirstTwoLines(animals[0], comments[0], '.')}
 
-${getFirstTwoLines(animals[1], comments[1], ';')}
-${generateSwallowedLines(animals.slice(0, 2))}
-I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
-
-${getFirstTwoLines(animals[2], comments[2], ';')}
-${generateSwallowedLines(animals.slice(0, 3))}
-I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
-
-${getFirstTwoLines(animals[3], comments[3], ';')}
-${generateSwallowedLines(animals.slice(0, 4))}
-I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
-
-${getFirstTwoLines(animals[4], comments[4], ';')}
-${generateSwallowedLines(animals.slice(0, 5))}
-I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
-
-${getFirstTwoLines(animals[5], comments[5], ';')}
-${generateSwallowedLines(animals.slice(0, 6))}
-I don't know why she swallowed a ${animals[0]} - perhaps she'll die!
+${middleLines}
 
 ${getFinalLine(animals[animals.length-1], comments[comments.length-1])}`
 };
